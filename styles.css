@@ -6,86 +6,193 @@ body{
     display: flex;
     background-color: #06141B;
     height: 8vh;
+    width: 100%;
     align-items: center;
     justify-content: space-between;
     padding: 0px 20px;
     box-shadow: 5px 5px 10px rgb(255, 255, 255);
     color:#CCD0CF;
+    z-index: 1;
+
 }
 p{
-    font-size: 20px;
+    font-size: 12px;
 }
 ul{
     list-style-type: none;
     display: flex;
-    gap: 17px;
-    border: 1px solid white;
+    gap: 20px;
 }
 li{
-    font-size: 22px;
+    font-size: 15px;
 }
 li:hover{
-    background-color: rgb(154, 155, 155);
+    background-color: rgb(255, 255, 255);
+    color:#06141B;
     transform: scale(1.1);
-    transition: transform 0.3s;
-    border-radius: 2px;
+    transition: transform 0.8s;
+    border-radius: 5px;
 }
 section{
     display: flex;
-     width: 100vw;
-     height: 100vh;
+     width: 100%;
+     height: 100%;
      align-items: center;
      flex-direction: column;
      justify-content: space-evenly;
      background-color: #11212D;
-     padding: 5px;
-     margin: 1px;
+     padding: 25px;
+     margin-top: 1px;
+     gap: 130px;
 
 }
 
-h1{
-    font-size: 40px;
-}
+
 .principal{
     display:flex;
-    flex-direction: column;
-    box-shadow: 0px 0px 10px rgb(216, 215, 215);  
-    width: 30%;  
+    width: 50%;  
     color:#CCD0CF;
-    text-align: center;
+    height: auto;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    gap: 10px;
 
 }
+.principal-descripcion{
+    flex-direction: column;
+}
 
+.principal-descripcion h1{
+    font-size: 50px;
+}
 
-.skills{
-    width: 40%;
-    height: 50%;
+.perfil{
+    border-radius: 86px;
+    border: 1px solid ;
+    box-shadow: 2px 2px 10px #CCD0CF;
+
+}
+.perfil img{
+    border-radius: 100px;
+    width: 150px;
+    height: 150px;
+}
+@media screen and (max-width: 500px) {
+    .principal {
+    display: flex;
+      flex-direction: column;
+    }
+    .principal-descripcion h1{
+        font-size: 30px;
+    }
+    
+    
+  }
+  
+
+  .skills {
+    width: 90vh;
+    height: 90vh;
     border: 1px solid #CCD0CF;
     text-align: center;
-    color:#CCD0CF;
+    color: #CCD0CF;
     display: flex;
     flex-direction: column;
-    box-shadow: 0px 0px 10px rgb(216, 215, 215);  
-
+    align-items: center;
+    box-shadow: 0px 0px 10px rgb(216, 215, 215); 
+    position: relative; 
     
 }
+
+.skills-text h1 {
+    font-size: 30px;
+    transform: translateY(-130%);
+    background-color: #11212D; 
+    }
+
 .skills-items{
-    width: 100%;
+    width: 89%;
+    height: 60vh;
+    min-width: 60vh;
     display: flex;
-    gap: 20px;
+    gap: 15px;
     flex-flow: wrap;
-    justify-content: flex-start;
+    padding: 10px;
     
 }
 .skills-item{
     border: 1px solid  #CCD0CF;
-    flex-grow: 1;
-    height: 20vh;
+    flex: 1 1 auto;
+    height: 140px;
+    width:140px;
     background-color: #4a5c6a;
     display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;    
+    
+}
+
+.skills-item:hover{
+    transform: scale(1.1);
+    transition: transform 0.6s;
+    background-color: #3a4852;
+    box-shadow: 0px 0px 10px #CCD0CF;
+
+}
+
+.skills-item img{
+    height: 70px;
+    width: 70px;
+
+}
+
+.experience{
+    height: 60vh;
+    width: 100vh;
+    border: 1px solid #CCD0CF;
+    display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    box-shadow: 0px 0px 10px rgb(216, 215, 215); 
+}
+.experience-titulo{
+    border: 1px solid #CCD0CF;
+    position: relative;
+}
+.experience-titulo h1{
+    transform: translateY(-350%);
+    background-color: #11212D; 
+    font-size: 30px;
+    color:#CCD0CF;
     
-    
+}
+
+
+.experience-descripcion{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border: 1px solid;
+    color: #CCD0CF;
+    height:150vh;
+}
+.experience-descripcion img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+}
+
+footer {
+    background-color: #06141B;
+    width: 100%;
+    padding: 20px;
+    color: #CCD0CF;
+    text-align: center;
 }
 
 
